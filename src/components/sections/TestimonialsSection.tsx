@@ -43,7 +43,7 @@ export function TestimonialsSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Quote */}
                     <div className="reveal-left">
-                        <div className="quote-mark mb-2">"</div>
+                        <div className="quote-mark mb-2">{"\""}</div>
                         <blockquote className="font-display text-dark text-xl lg:text-2xl font-medium leading-relaxed mb-8">
                             {t.quote}
                         </blockquote>
@@ -86,8 +86,8 @@ export function TestimonialsSection() {
                                         key={i}
                                         onClick={() => setActive(i)}
                                         className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === active
-                                                ? dotActiveMap[item.color] + " scale-125"
-                                                : "bg-stone-300"
+                                            ? dotActiveMap[item.color] + " scale-125"
+                                            : "bg-stone-300"
                                             }`}
                                     />
                                 ))}
